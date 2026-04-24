@@ -10,7 +10,7 @@ Install the three wheels first, then the flax stack in that sequence. Don't pip 
 
 ## Prerequisites
 
-The system default gcc/clang on JetPack 6.2 cannot compile jaxlib. clang 17 is required (clang 14, the apt default, fails on ARM SVE). If rebuilding from source:
+The system default gcc/clang on JetPack 6.2 isn't able to compile jaxlib. clang 17 is required (clang 14, the apt default, fails on ARM SVE). If rebuilding from source:
 
 ```bash
 wget https://apt.llvm.org/llvm.sh
@@ -20,7 +20,7 @@ sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-17 100
 sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-17 100
 ```
 
-The prebuilt wheels in this repo skip this requirement entirely.
+Using the prebuilt wheels here means you skip this entirely.
 
 ## Install
 
